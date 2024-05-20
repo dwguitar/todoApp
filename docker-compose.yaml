@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  app:
+    image: 'todo:latest'
+    build:
+      context: .
+    container_name: todo
+    ports:
+      - 9090:8081
