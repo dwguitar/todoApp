@@ -67,8 +67,7 @@ public class TaskServiceImpl implements TaskService {
             taskDb.setTransactionDate(LocalDateTime.now());
             return converter.convert(taskRepository.save(taskDb));
         }
-        TaskDTO taskDTO = new TaskDTO();
-        return taskDTO;
+        return new TaskDTO();
     }
 
     @Override
